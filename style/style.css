@@ -1,0 +1,112 @@
+/* ------------- RESET START ------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ------------- RESET END ------------- */
+
+/* ------------- GENERAL STYLES START ------------- */
+
+.form-section {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.form-section p {
+  margin-bottom: 15px;
+}
+
+/* ------------- GENERAL STYLES END ------------- */
+
+/* ------------- HEADER START ------------- */
+
+.form-header {
+  text-align: center;
+}
+
+.form-header a {
+  color: #3d3d3d;
+}
+
+.form-header .active-link {
+  color: #46a358;
+}
+
+/* ------------- HEADER END ------------- */
+
+/* ------------- FORM START ------------- */
+
+.form-section input {
+  width: 300px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+/* ------------- FORM END ------------- */
+
+/* ------------- BUTTONS START ------------- */
+
+.form-button {
+  background-color: #46a358;
+  color: #ffffff;
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.social-button {
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* ------------- BUTTONS END ------------- */
+
+/* ------------- DIVIDER START ------------- */
+
+.divider {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+/* ------------- DIVIDER START ------------- */
+
+/* ------------- LOGIN PAGE START ------------- */
+
+.login-footer {
+  height: 10px;
+  background-color: #46a358;
+}
+
+/* ------------- LOGIN PAGE END ------------- */
+
+/* ------------- REGISTER PAGE START ------------- */
+
+.register-footer {
+  height: 10px;
+  background-color: #46a358;
+}
+
+/* ------------- REGISTER PAGE END ------------- */
