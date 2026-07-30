@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login-Grenshop</title>
+    <title>Login-Greenshop</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="form-header">
+      <a class="active-link" href="./login.html">Login</a> |
+      <a href="./register.html">Register</a>
+    </header>
     <main>
       <section class="form-section">
-        <h2>Login | Register</h2>
+        <a class="home-link" href="./index.html">
+          <span>&times;</span>
+        </a>
         <form>
           <p>Enter your email and password to log in.</p>
           <input
@@ -23,23 +28,23 @@
           <input type="password" name="password" placeholder="Password" />
           <br />
 
-          <button type="submit">Login</button>
+          <button class="form-button" type="submit">Login</button>
         </form>
         <hr />
         <p>Or log in with</p>
 
-        <button type="button">
+        <button class="social-button" type="button">
           <img src="./images/google.png" alt="Google" />
           Continue with Google
         </button>
         <br />
 
-        <button type="button">
+        <button class="social-button" type="button">
           <img src="./images/facebook.png" alt="Facebook" />
           Continue with Facebook
         </button>
       </section>
     </main>
-    <footer></footer>
+    <footer class="login-footer"></footer>
   </body>
 </html>

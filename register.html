@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register-Grenshop</title>
+    <title>Register-Greenshop</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="form-header">
+      <a href="./login.html">Login</a> |
+      <a class="active-link" href="./register.html">Register</a>
+    </header>
     <main>
       <section class="form-section">
-        <h2>Login | Register</h2>
+        <a class="home-link" href="./index.html">
+          <span>&times;</span>
+        </a>
         <form>
           <p>Enter your information to register.</p>
 
@@ -34,23 +39,23 @@
           />
           <br />
 
-          <button type="submit">Register</button>
+          <button class="form-button" type="submit">Register</button>
         </form>
         <hr />
         <p>Or register with</p>
 
-        <button type="button">
+        <button class="social-button" type="button">
           <img src="./images/google.png" alt="Google" />
           Continue with Google
         </button>
         <br />
 
-        <button type="button">
+        <button class="social-button" type="button">
           <img src="./images/facebook.png" alt="Facebook" />
           Continue with Facebook
         </button>
       </section>
     </main>
-    <footer></footer>
+    <footer class="register-footer"></footer>
   </body>
 </html>

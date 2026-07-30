@@ -11,3 +11,51 @@ a:hover {
 img {
   max-width: 100%;
 }
+
+.form-section {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form-section input {
+  width: 300px;
+  height: 45px;
+}
+.form-header {
+  text-align: center;
+}
+.form-header a {
+  color: #3d3d3d;
+}
+.form-header .active-link {
+  color: #46a358;
+}
+.form-button {
+  background-color: #46a358;
+  color: #ffffff;
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+.social-button {
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+/* ------------- LOGIN PAGE START ------------- */
+
+.login-footer {
+  height: 10px;
+  background-color: #46a358;
+}
+/* ------------- LOGIN PAGE END ------------- */
+
+/* ------------- REGISTER PAGE START ------------- */
+.register-footer {
+  height: 10px;
+  background-color: #46a358;
+}
+/* ------------- REGISTER PAGE END ------------- */
