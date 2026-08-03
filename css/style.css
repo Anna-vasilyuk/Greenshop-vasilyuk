@@ -1,0 +1,214 @@
+/*--------- RESET STYLES START --------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------- RESET STYLES END --------- */
+
+/*--------- GLOBAL STYLES START --------- */
+
+body {
+  color: #3d3d3d;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*--------- GLOBAL STYLES END --------- */
+
+/*--------- CONTAINER START --------- */
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*--------- CONTAINER END --------- */
+
+/*--------- HEADER START --------- */
+
+.header {
+  border-bottom: 1px solid #46a35880;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 25px;
+  padding-bottom: 18px;
+}
+
+.header nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------- HEADER END --------- */
+
+/*--------- HEADER ACTIONS START --------- */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-actions > img {
+  margin-right: 30px;
+}
+
+/*--------- HEADER ACTIONS END --------- */
+
+/*--------- NAVIGATION MENU START --------- */
+
+.menu {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu li {
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: #3d3d3d;
+  font-size: 16px;
+
+  padding-bottom: 22px;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+  border-bottom-color: #46a358;
+  font-weight: 500;
+}
+
+/*--------- NAVIGATION MENU END --------- */
+
+/*--------- LOGIN BUTTON START --------- */
+
+.login-button {
+  font-weight: 500;
+  font-size: 16px;
+
+  background-color: #46a358;
+  color: #ffffff;
+
+  border-radius: 6px;
+
+  padding: 7px 17px;
+
+  display: inline-flex;
+  align-items: center;
+
+  margin-left: auto;
+
+  width: 100px;
+}
+
+.login-button img {
+  margin-right: 4px;
+  margin-top: -1px;
+}
+
+/*--------- LOGIN BUTTON END --------- */
+
+/*--------- HERO SECTION START --------- */
+
+.hero {
+  background-color: #f5f5f580;
+  margin-top: 12px;
+  padding: 40px;
+}
+
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-top: 50px;
+  max-width: 560px;
+}
+
+.hero-image {
+  display: inline-block;
+  vertical-align: top;
+
+  max-width: 500px;
+}
+
+/*--------- HERO SECTION END --------- */
+
+/*--------- HERO TEXT START --------- */
+
+.hero-welcome {
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 16px;
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+}
+
+.hero-heading {
+  font-weight: 900;
+  font-size: 70px;
+
+  line-height: 70px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+  width: 570px;
+}
+
+.accent {
+  color: #46a358;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 24px;
+
+  margin-bottom: 44px;
+  color: #727272;
+}
+
+/*--------- HERO TEXT END --------- */
+
+/*--------- HERO BUTTON START --------- */
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+
+  padding: 11px 27px 9px 26px;
+
+  border: none;
+  border-radius: 6px;
+  display: inline-block;
+
+  background-color: #46a358;
+  color: #ffffff;
+}
+
+/*--------- HERO BUTTON END --------- */
