@@ -1,9 +1,24 @@
 /*--------- RESET STYLES START --------- */
+:root {
+  --conteiner-width: 1200px;
+  --basic-space: 15px;
+  --primary-color: #46a358;
+  --background-color: #f5f5f5;
+  --text-color: #ffffff;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 16px;
 }
 
 /*--------- RESET STYLES END --------- */
@@ -12,11 +27,11 @@
 
 body {
   color: #3d3d3d;
-  font-family: Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: #3d3d3d;
 }
 
 img {
@@ -29,11 +44,12 @@ img {
 /*--------- CONTAINER START --------- */
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: calc(var(--conteiner-width) + var(--basic-space) * 2);
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /*--------- CONTAINER END --------- */
@@ -41,7 +57,7 @@ img {
 /*--------- HEADER START --------- */
 
 .header {
-  border-bottom: 1px solid #46a35880;
+  border-bottom: 1px solid var(--primary-color);
 
   display: flex;
   align-items: center;
@@ -88,16 +104,15 @@ img {
 }
 
 .menu a {
-  color: #3d3d3d;
-  font-size: 16px;
-
   padding-bottom: 22px;
   border-bottom: 3px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .menu a:hover {
-  border-bottom-color: #46a358;
-  font-weight: 500;
+  border-bottom-color: var(--primary-color);
+  font-weight: 700;
 }
 
 /*--------- NAVIGATION MENU END --------- */
@@ -105,27 +120,20 @@ img {
 /*--------- LOGIN BUTTON START --------- */
 
 .login-button {
-  font-weight: 500;
-  font-size: 16px;
-
-  background-color: #46a358;
-  color: #ffffff;
-
-  border-radius: 6px;
-
-  padding: 7px 17px;
-
   display: inline-flex;
   align-items: center;
-
-  margin-left: auto;
-
   width: 100px;
+  margin-left: auto;
+  padding: 7px 15px;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .login-button img {
   margin-right: 4px;
-  margin-top: -1px;
 }
 
 /*--------- LOGIN BUTTON END --------- */
@@ -133,24 +141,22 @@ img {
 /*--------- HERO SECTION START --------- */
 
 .hero {
-  background-color: #f5f5f580;
   margin-top: 12px;
   padding: 40px;
+  background-color: var(--background-color);
 }
 
 .wrapper {
   display: inline-block;
-  vertical-align: top;
-
   margin-top: 50px;
   max-width: 560px;
+  vertical-align: top;
 }
 
 .hero-image {
   display: inline-block;
-  vertical-align: top;
-
   max-width: 500px;
+  vertical-align: top;
 }
 
 /*--------- HERO SECTION END --------- */
@@ -158,39 +164,31 @@ img {
 /*--------- HERO TEXT START --------- */
 
 .hero-welcome {
-  font-weight: 500;
-  font-size: 14px;
-
-  line-height: 16px;
-  text-transform: uppercase;
-
   margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .hero-heading {
-  font-weight: 900;
-  font-size: 70px;
-
-  line-height: 70px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 5px;
   width: 570px;
+  margin-bottom: 5px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .accent {
-  color: #46a358;
+  color: var(--primary-color);
 }
 
 .hero-description {
-  font-weight: 400;
-  font-size: 14px;
-
-  line-height: 24px;
-
   margin-bottom: 44px;
-  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 /*--------- HERO TEXT END --------- */
@@ -198,17 +196,280 @@ img {
 /*--------- HERO BUTTON START --------- */
 
 .hero-button {
-  font-weight: 700;
-  font-size: 16px;
-
-  padding: 11px 27px 9px 26px;
-
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 6px;
-  display: inline-block;
-
-  background-color: #46a358;
-  color: #ffffff;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 /*--------- HERO BUTTON END --------- */
+
+/*--------- PRODUCTS SECTION START --------- */
+
+.products {
+  margin-top: 45px;
+  padding: 0;
+}
+
+/*--------- SIDEBAR START ---------*/
+
+.sidebar {
+  float: left;
+  width: 310px;
+  padding: 15px;
+  background-color: var(--background-color);
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.sidebar-title {
+  margin-bottom: 7px;
+}
+
+.size-title {
+  margin-top: 45px;
+  margin-bottom: 7px;
+}
+
+.sidebar-banner {
+  margin-top: 20px;
+  background-image: url("../images/bubbles.png");
+  background-position: center;
+}
+
+.sidebar-banner img {
+  width: 100%;
+}
+
+.sidebar .sale-title {
+  padding-top: 15px;
+  font-family: "Hanging Letters", sans-serif;
+  font-size: 65px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.sale-description {
+  float: right;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 0.6;
+}
+
+/*--------- SIDEBAR END --------- */
+
+/*--------- CATEGORIES START --------- */
+
+.categories-list {
+  list-style: none;
+}
+
+.categories-list li {
+  margin-bottom: 10px;
+}
+
+.categories-list li:last-child {
+  margin-bottom: 0;
+}
+
+.categories-list a {
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2.6;
+}
+
+.categories-list a:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.categories-list span {
+  font-size: 15px;
+  float: right;
+}
+
+/*--------- CATEGORIES END --------- */
+
+/*--------- PRICE RANGE START --------- */
+
+.price-range-title {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.price-range {
+  padding-left: 5px;
+}
+
+.price-range input {
+  width: 100%;
+  margin-bottom: 20px;
+  accent-color: var(--primary-color);
+}
+
+.price-range p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.price-range p span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.price-range button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 25px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/*--------- PRICE RANGE END --------- */
+
+/*--------- CONTENT START --------- */
+
+.content {
+  float: right;
+  width: 840px;
+}
+
+.products-top {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.products-tabs {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.products-tabs li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.products-tabs li:last-child {
+  margin-right: 0;
+}
+
+.products-tabs a {
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+}
+
+.products-tabs a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  font-weight: 700;
+}
+
+.sorting {
+  margin-left: auto;
+}
+
+/*--------- CONTENT END --------- */
+
+/*--------- CARDS START --------- */
+
+.cards {
+  margin-top: 30px;
+}
+
+.card {
+  float: left;
+  width: 250px;
+  margin-right: 45px;
+  margin-bottom: 70px;
+  border-top: 2px solid transparent;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card:nth-child(3n + 1) {
+  clear: left;
+}
+
+.card:hover {
+  border-top: 2px solid var(--primary-color);
+}
+
+.card-image {
+  background-color: var(--background-color);
+}
+.card h3 {
+  margin: 20px 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card .price {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #727272;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+/*--------- CARDS END --------- */
+
+/*--------- PAGINATION START --------- */
+
+.pagination {
+  float: right;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 40px;
+  margin-right: 10px;
+  padding: 8px 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.pagination a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.pagination a img {
+  width: 12px;
+  display: inline-block;
+}
+
+/*--------- PAGINATION END --------- */
+
+/*--------- CLEARFIX --------- */
+.clearfix {
+  display: block;
+  clear: both;
+}
