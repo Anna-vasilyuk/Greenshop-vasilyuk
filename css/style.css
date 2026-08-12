@@ -416,7 +416,31 @@ img {
 }
 
 .card-image {
+  position: relative;
+  z-index: 1;
   background-color: var(--background-color);
+}
+.card-actions {
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  gap: 10px;
+}
+.card-actions button {
+  background: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  border-radius: 4px;
+}
+.card-actions button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.card-image:hover .card-actions {
+  display: flex;
 }
 .card h3 {
   margin: 20px 0 5px;
@@ -437,6 +461,17 @@ img {
   margin-left: 5px;
 }
 
+.sale {
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+}
 /*--------- CARDS END --------- */
 
 /*--------- PAGINATION START --------- */
