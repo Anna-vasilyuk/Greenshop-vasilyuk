@@ -36,3 +36,22 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Encode Sans Expanded";
+  src:
+    url("EncodeSansExpanded-Bold.woff2") format("woff2"),
+    url("EncodeSansExpanded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Encode Sans Expanded";
+  src:
+    url("EncodeSansExpanded-Regular.woff2") format("woff2"),
+    url("EncodeSansExpanded-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
