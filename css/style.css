@@ -56,14 +56,12 @@ img {
 
 /*--------- HEADER START --------- */
 
-.header {
+.header .container {
   border-bottom: 1px solid var(--primary-color);
-
   display: flex;
   align-items: center;
-
-  margin-top: 25px;
-  padding-bottom: 18px;
+  justify-content: space-between;
+  padding: 10px 0 20px;
 }
 
 .header nav {
@@ -87,34 +85,82 @@ img {
 /*--------- HEADER ACTIONS END --------- */
 
 /*--------- NAVIGATION MENU START --------- */
+ul {
+  list-style: none;
+}
 
 .menu {
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: "Encode Sans Expanded", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
 }
 
-.menu li {
-  margin-right: 50px;
-  display: inline-block;
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  padding-bottom: 22px;
-  border-bottom: 3px solid transparent;
+.menu-link {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 27px;
 }
 
-.menu a:hover {
+.menu-arrow {
+  display: none;
+  position: relative;
+  top: -2px;
+}
+
+.sub-menu a:hover .menu-arrow {
+  display: block;
+}
+.menu-link:hover {
   border-bottom-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  width: 220px;
+  padding-top: 45px;
+  z-index: 5;
+}
+.sub-menu a {
+  background-color: #edf6ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.sub-menu .menu-item a:hover {
+  background-color: #1a712a;
+  color: var(--text-color);
   font-weight: 700;
 }
-
+.menu-item:hover > .sub-menu {
+  display: block;
+}
+.menu > .menu-item > .sub-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+}
+.sub-menu .sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 5px;
+  z-index: 5;
+}
+.sub-menu .menu-item {
+  position: static;
+}
 /*--------- NAVIGATION MENU END --------- */
 
 /*--------- LOGIN BUTTON START --------- */
@@ -420,6 +466,7 @@ img {
   z-index: 1;
   background-color: var(--background-color);
 }
+
 .card-actions {
   position: absolute;
   z-index: 2;
@@ -429,16 +476,18 @@ img {
   justify-content: center;
   gap: 10px;
 }
+
 .card-actions button {
-  background: var(--text-color);
-  border: 1px solid var(--primary-color);
+  background: none;
+  border: none;
   padding: 5px;
   border-radius: 4px;
 }
+
 .card-actions button:hover {
-  background-color: var(--background-color);
   color: var(--primary-color);
 }
+
 .card-image:hover .card-actions {
   display: flex;
 }
