@@ -155,7 +155,7 @@ ul {
   position: absolute;
   left: 100%;
   top: 0;
-  margin-left: 5px;
+  padding-left: 5px;
   z-index: 5;
 }
 .sub-menu .menu-item {
