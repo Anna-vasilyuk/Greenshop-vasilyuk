@@ -908,7 +908,173 @@
           </div>
         </div>
       </section>
-      <footer class="footer"></footer>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-benefits">
+              <div class="footer-benefit">
+                <img src="./images/Garden.svg" alt="Garden Care" />
+                <h3>Garden Care</h3>
+                <p>
+                  We are an online plant shop offering a wide range of cheap and
+                  trendy plants.
+                </p>
+              </div>
+
+              <div class="footer-benefit">
+                <img src="./images/Renovation.svg" alt="Plant Renovation" />
+                <h3>Plant Renovation</h3>
+                <p>
+                  We are an online plant shop offering a wide range of cheap and
+                  trendy plants.
+                </p>
+              </div>
+
+              <div class="footer-benefit">
+                <img src="./images/Watering.svg" alt="Watering Graden" />
+                <h3>Watering Graden</h3>
+                <p>
+                  We are an online plant shop offering a wide range of cheap and
+                  trendy plants.
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-subscribe">
+              <h3>Would you like to join newsletters?</h3>
+
+              <form class="subscribe-form">
+                <input type="email" placeholder="enter your email address..." />
+                <button type="submit">Join</button>
+              </form>
+
+              <p>
+                We usually post offers and challenges in newsletter. We’re your
+                online houseplant destination. We offer a wide range of
+                houseplants and accessories shipped directly from our
+                (green)house to yours!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <div class="container">
+            <div class="footer-items">
+              <div class="footer-logo">
+                <img src="./images/Logo.png" alt="GreenShop" />
+              </div>
+
+              <div class="footer-location">
+                <img src="./images/location.svg" alt="" />
+                <p>
+                  70 West Buckingham Ave.<br />
+                  Farmingdale, NY 11735
+                </p>
+              </div>
+
+              <div class="footer-email">
+                <img src="./images/Message.svg" alt="" />
+                <p>contact@greenshop.com</p>
+              </div>
+
+              <div class="footer-phone">
+                <img src="./images/Calling.svg" alt="" />
+                <p>+88 01911 717 490</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-menu">
+          <div class="container">
+            <div class="footer-top-menu">
+              <div class="footer-columns">
+                <div class="footer-column">
+                  <h3>My Account</h3>
+                  <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Our stores</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Specials</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-column">
+                  <h3>Help &amp; Guide</h3>
+                  <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Product Policy</a></li>
+                    <li><a href="#">How to Return</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-column">
+                  <h3>Categories</h3>
+                  <ul>
+                    <li><a href="#">House Plants</a></li>
+                    <li><a href="#">Potter Plants</a></li>
+                    <li><a href="#">Seeds</a></li>
+                    <li><a href="#">Small Plants</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-social">
+                <h3 class="footer-social-title">Social Media</h3>
+
+                <div class="social-media">
+                  <button class="social-facebook" type="button">
+                    <img src="./images/Facebook.svg" alt="Facebook" />
+                  </button>
+
+                  <button class="social-button" type="button">
+                    <img src="./images/Instagram.svg" alt="Instagram" />
+                  </button>
+
+                  <button class="social-button" type="button">
+                    <img src="./images/Twitter.svg" alt="Twitter" />
+                  </button>
+
+                  <button class="social-button" type="button">
+                    <img src="./images/Linkedin.svg" alt="LinkedIn" />
+                  </button>
+
+                  <button class="social-button" type="button">
+                    <img src="./images/YouTube.svg" alt="YouTube" />
+                  </button>
+                </div>
+
+                <div class="footer-accept">
+                  <h3 class="footer-accept-title">We accept</h3>
+                  <img src="./images/visa.png" alt="visa" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © <span id="currentYear">2021</span> GreenShop. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <script>
+        const yearElem = document.getElementById("currentYear");
+        const currentYear = new Date().getFullYear();
+
+        console.log({ yearElem, currentYear });
+
+        yearElem.innerText = currentYear;
+      </script>
     </main>
   </body>
 </html>
