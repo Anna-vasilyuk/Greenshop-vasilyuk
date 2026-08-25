@@ -55,6 +55,7 @@ img {
   padding-right: var(--basic-space);
   margin-left: auto;
   margin-right: auto;
+  border: 3px solid red;
 }
 
 /*--------- CONTAINER END --------- */
@@ -62,6 +63,7 @@ img {
 /*--------- HEADER START --------- */
 
 .header .container {
+  width: 100%;
   border-bottom: 1px solid var(--primary-color);
   display: flex;
   align-items: center;
@@ -70,8 +72,9 @@ img {
 }
 
 .header nav {
-  margin-left: auto;
-  margin-right: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 /*--------- HEADER END --------- */
@@ -81,10 +84,7 @@ img {
 .header-actions {
   display: flex;
   align-items: center;
-}
-
-.header-actions > img {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 /*--------- HEADER ACTIONS END --------- */
@@ -97,6 +97,7 @@ ul {
 .menu {
   font-family: "Encode Sans Expanded", sans-serif;
   display: flex;
+  justify-content: center;
   justify-content: center;
   gap: 45px;
 }
@@ -169,12 +170,15 @@ ul {
 /*--------- NAVIGATION MENU END --------- */
 
 /*--------- LOGIN BUTTON START --------- */
-
+.header-logo {
+  display: flex;
+  align-items: center;
+}
 .login-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: 100px;
-  margin-left: auto;
   padding: 7px 15px;
   background-color: var(--primary-color);
   border-radius: 6px;
