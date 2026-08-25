@@ -55,7 +55,6 @@ img {
   padding-right: var(--basic-space);
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid red;
 }
 
 /*--------- CONTAINER END --------- */
@@ -197,21 +196,22 @@ ul {
 
 .hero {
   margin-top: 12px;
-  padding: 40px;
+}
+.hero .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   background-color: var(--background-color);
 }
 
 .wrapper {
-  display: inline-block;
-  margin-top: 50px;
   max-width: 560px;
-  vertical-align: top;
+  margin: 68px 0 0 44px;
 }
 
 .hero-image {
-  display: inline-block;
+  flex: 1;
   max-width: 500px;
-  vertical-align: top;
 }
 
 /*--------- HERO SECTION END --------- */
@@ -251,8 +251,11 @@ ul {
 /*--------- HERO BUTTON START --------- */
 
 .hero-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 25px;
+  max-width: 140px;
   background-color: var(--primary-color);
   border: none;
   border-radius: 6px;
