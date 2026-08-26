@@ -960,7 +960,10 @@ ul {
 .social-button {
   padding: 7px;
 }
-
+.social-button:hover,
+.social-facebook:hover {
+  filter: brightness(90%);
+}
 .social-facebook {
   padding: 7px 11px;
 }
