@@ -43,7 +43,9 @@ img {
   max-width: 100%;
   display: block;
 }
-
+.button:hover {
+  background-color: var(--submenu-hover-color);
+}
 /*--------- GLOBAL STYLES END --------- */
 
 /*--------- CONTAINER START --------- */
