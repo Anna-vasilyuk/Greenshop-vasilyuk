@@ -712,7 +712,7 @@ ul {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: px;
+  margin-top: 10px;
 }
 
 .article-description {
@@ -723,8 +723,6 @@ ul {
 }
 
 .article-link {
-  display: inline-block;
-  align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
@@ -736,8 +734,8 @@ ul {
 }
 
 .article-link svg {
-  vertical-align: middle;
-  top: 1px;
+  position: relative;
+  top: 2px;
 }
 
 /*--------- ARTICLES END --------- */
