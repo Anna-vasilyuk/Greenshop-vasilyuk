@@ -573,28 +573,37 @@ ul {
 /*--------- DISCOVER SECTION START --------- */
 
 .discover {
-  margin-top: 50px;
-  padding: 40px 0 0;
+  margin-top: 40px;
 }
 
 /*--------- OFFERS START --------- */
 
 .offers {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
+  position: relative;
+  left: -15px;
+  width: calc(100% + 30px);
+  padding-top: 50px;
 }
 
 .offer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex: 1;
   background-color: var(--background-color);
+  position: relative;
 }
 
 .offer > img {
+  width: 280px;
+  height: auto;
   display: block;
-  max-width: 45%;
-  margin-top: -50px;
+  position: absolute;
+  left: -20px;
+  top: -50px;
+  z-index: 1;
 }
 
 .offer-info {
@@ -602,11 +611,12 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  margin: 35px 35px 45px auto;
 }
 
 .offer-heading {
-  margin: 20px 10px;
-  max-width: 150px;
+  margin-bottom: 10px;
+  max-width: 170px;
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
@@ -614,15 +624,15 @@ ul {
 }
 
 .offer-text {
-  margin: 0 10px;
+  margin-bottom: 25px;
   font-size: 14px;
+  max-width: 300px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .offer-button {
-  padding: 10px 20px;
-  margin: 25px 10px 0;
+  padding: 10px 25px;
   border: none;
   border-radius: 6px;
   background-color: var(--primary-color);
@@ -643,7 +653,7 @@ ul {
 /*--------- ARTICLES START --------- */
 
 .articles {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .articles-heading {
@@ -653,29 +663,41 @@ ul {
   line-height: 1.1;
   text-align: center;
 }
+
 .articles-description {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   text-align: center;
-  margin-bottom: 35px;
 }
+
+.article > img {
+  width: 100%;
+  display: block;
+}
+
 .articles-list {
-  display: flex;
-  gap: 30px;
+  margin-top: 35px;
 }
 
 .article {
-  display: flex;
-  flex-direction: column;
   flex: 1;
-  padding: 10px;
   background-color: var(--background-color);
   text-align: left;
 }
 
-.article > img {
-  display: block;
+.articles-list .container {
+  padding-inline: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .article-date {
@@ -683,14 +705,13 @@ ul {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 10px;
 }
 
 .article-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: 10px;
+  margin-top: px;
 }
 
 .article-description {
@@ -706,7 +727,6 @@ ul {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
-  text-decoration: none;
   margin-top: 10px;
 }
 
