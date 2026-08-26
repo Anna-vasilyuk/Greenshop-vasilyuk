@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login-Greenshop</title>
+    <title>Register-Greenshop</title>
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
   </head>
@@ -11,8 +11,8 @@
   <body>
     <header class="form-header">
       <div class="container">
-        <a class="active-link" href="./login.html">Login</a> |
-        <a href="./register.html">Register</a>
+        <a href="./login.html">Login</a> |
+        <a class="active-link" href="./register.html">Register</a>
       </div>
     </header>
 
@@ -23,9 +23,15 @@
         </a>
         <div class="form-section">
           <form>
-            <p class="form-description">
-              Enter your email and password to log in.
-            </p>
+            <p class="form-description">Enter your information to register.</p>
+
+            <input
+              class="form-input"
+              type="text"
+              name="username"
+              placeholder="Username"
+            />
+            <br />
 
             <input
               class="form-input"
@@ -43,11 +49,18 @@
             />
             <br />
 
-            <button class="button form-button" type="submit">Login</button>
+            <input
+              class="form-input"
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+            />
+            <br />
+
+            <button class="button form-button" type="submit">Register</button>
           </form>
 
           <p class="divider">Or log in with</p>
-
           <hr />
 
           <button class="social-button" type="button">
@@ -63,6 +76,6 @@
         </div>
       </div>
     </main>
-    <footer class="login-footer"></footer>
+    <footer class="register-footer"></footer>
   </body>
 </html>
