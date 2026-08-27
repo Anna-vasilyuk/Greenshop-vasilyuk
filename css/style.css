@@ -272,16 +272,29 @@ ul {
 
 .products {
   margin-top: 45px;
-  padding: 0;
 }
-
+.products-wrapper {
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+  gap: 50px;
+  align-items: start;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.content {
+  width: 100%;
+}
 /*--------- SIDEBAR START ---------*/
 
 .sidebar {
-  float: left;
-  width: 310px;
-  padding: 15px;
   background-color: var(--background-color);
+  overflow: hidden;
+  padding: 15px 15px 0 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.sidebar ul {
+  padding-left: 12px;
 }
 
 .sidebar h2 {
@@ -293,20 +306,24 @@ ul {
 .sidebar-title {
   margin-bottom: 7px;
 }
-
 .size-title {
   margin-top: 45px;
   margin-bottom: 7px;
 }
 
 .sidebar-banner {
-  margin-top: 20px;
   background-image: url("../images/bubbles.png");
   background-position: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 45px;
 }
 
 .sidebar-banner img {
   width: 100%;
+  align-self: end;
 }
 
 .sidebar .sale-title {
@@ -318,7 +335,8 @@ ul {
 }
 
 .sale-description {
-  float: right;
+  display: block;
+  text-align: right;
   font-size: 23px;
   font-weight: 700;
   line-height: 0.6;
@@ -333,7 +351,7 @@ ul {
 }
 
 .categories-list li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .categories-list li:last-child {
@@ -341,9 +359,9 @@ ul {
 }
 
 .categories-list a {
-  display: inline-block;
-  width: 100%;
-  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 2.6;
@@ -356,7 +374,6 @@ ul {
 
 .categories-list span {
   font-size: 15px;
-  float: right;
 }
 
 /*--------- CATEGORIES END --------- */
@@ -405,26 +422,20 @@ ul {
 
 /*--------- CONTENT START --------- */
 
-.content {
-  float: right;
-  width: 840px;
-}
-
 .products-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .products-tabs {
+  display: flex;
+  gap: 35px;
   list-style: none;
   font-size: 15px;
   font-weight: 400;
-}
-
-.products-tabs li {
-  display: inline-block;
-  margin-right: 40px;
 }
 
 .products-tabs li:last-child {
@@ -443,7 +454,18 @@ ul {
 }
 
 .sorting {
-  margin-left: auto;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sorting select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /*--------- CONTENT END --------- */
@@ -452,35 +474,35 @@ ul {
 
 .cards {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px 35px;
 }
 
 .card {
-  float: left;
-  width: 250px;
-  margin-right: 45px;
-  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
   border-top: 2px solid transparent;
-}
-
-.card:nth-child(3n) {
-  margin-right: 0;
-}
-
-.card:nth-child(3n + 1) {
-  clear: left;
 }
 
 .card:hover {
   border-top: 2px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
   background-color: var(--background-color);
+  height: 300px;
 }
 
 .card-actions {
+  display: flex;
   position: absolute;
   z-index: 2;
   bottom: 5px;
@@ -489,7 +511,10 @@ ul {
   justify-content: center;
   gap: 10px;
 }
-
+.card-image img {
+  max-width: 100%;
+  max-height: 80%;
+}
 .card-actions button {
   background: none;
   border: none;
@@ -511,14 +536,13 @@ ul {
 }
 
 .card .price {
-  margin: 0;
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 700;
 }
 
 .old-price {
-  color: var(--secondary-text-color);
+  color: #cbcbcb;
   text-decoration: line-through;
   margin-left: 5px;
 }
@@ -526,7 +550,7 @@ ul {
 .sale {
   position: absolute;
   top: 15px;
-  width: 100px;
+  left: 0;
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 5px 10px;
@@ -539,37 +563,40 @@ ul {
 /*--------- PAGINATION START --------- */
 
 .pagination {
-  float: right;
-  margin-top: 20px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .pagination a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
-  margin-right: 10px;
+  height: 40px;
   padding: 8px 0;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
-  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .pagination a:hover {
   background-color: var(--primary-color);
   color: var(--text-color);
+  font-weight: 700;
 }
 
 .pagination a img {
   width: 12px;
-  display: inline-block;
-}
-
-/*--------- PAGINATION END --------- */
-
-/*--------- CLEARFIX --------- */
-.clearfix {
+  height: auto;
   display: block;
-  clear: both;
 }
+.pagination a:hover img {
+  filter: invert(1) brightness(2);
+}
+/*--------- PAGINATION END --------- */
 
 /*--------- DISCOVER SECTION START --------- */
 
