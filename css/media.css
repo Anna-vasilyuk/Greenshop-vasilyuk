@@ -1,0 +1,515 @@
+/* ========================= 1024p ========================= */
+
+@media (max-width: 1024px) {
+  .container {
+    --basic-space: 20px;
+  }
+  .header-actions {
+    gap: 20px;
+  }
+  .menu {
+    gap: 30px;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .wrapper {
+    margin: 50px 0 0 25px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    max-width: 400px;
+    opacity: 0.8;
+  }
+  .products-wrapper {
+    gap: 30px;
+  }
+  .sidebar {
+    padding: 15px 10px 0;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .card-actions {
+    bottom: 10px;
+    opacity: 1;
+  }
+  .card-actions button {
+    width: 50px;
+    height: 50px;
+  }
+  .discover {
+    margin-top: 30px;
+  }
+  .offers {
+    padding-top: 40px;
+    gap: 20px;
+    left: 0;
+    width: 100%;
+  }
+  .offer > img {
+    width: 220px;
+    top: -40px;
+    left: -10px;
+  }
+  .offer-info {
+    margin: 25px 20px 30px auto;
+  }
+  .offer-text {
+    max-width: 220px;
+    font-size: 13px;
+  }
+
+  .articles {
+    margin-top: 60px;
+  }
+  .articles-list .container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .article {
+    flex: 1 1 calc(50% - 15px);
+  }
+  .footer-items,
+  .footer-top-menu {
+    padding: 25px 0;
+  }
+  .footer-accept {
+    margin-top: 10px;
+  }
+}
+
+/* ========================= 768px ========================= */
+
+@media (max-width: 768px) {
+  .container {
+    --basic-space: 15px;
+  }
+  .menu {
+    gap: 20px;
+  }
+
+  .header-actions {
+    gap: 15px;
+  }
+  .hero .container {
+    position: relative;
+  }
+  .hero-heading {
+    font-size: 50px;
+  }
+  .wrapper {
+    margin: 40px 0 0 15px;
+    max-width: 500px;
+  }
+
+  .hero-image {
+    right: -30px;
+    max-width: 300px;
+    opacity: 0.4;
+  }
+  .hero-description {
+    margin-bottom: 30px;
+  }
+  .hero-button {
+    padding: 9px 20px;
+    font-size: 15px;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .sidebar {
+    width: 310px;
+    margin: 0 auto;
+  }
+  .sidebar-banner {
+    display: none;
+  }
+  .products-top {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .products-tabs {
+    gap: 15px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .card h3 {
+    font-size: 14px;
+  }
+  .card .price {
+    font-size: 16px;
+  }
+  .card-actions button {
+    width: 34px;
+  }
+  .card-actions button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .pagination {
+    margin-top: 45px;
+  }
+  .offers {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+  }
+  .offer {
+    width: 100%;
+  }
+  .offer > img {
+    width: 250px;
+    top: -40px;
+    left: -10px;
+  }
+  .offer-info {
+    margin: 35px 35px 35px auto;
+  }
+  .offer-text {
+    max-width: 270px;
+  }
+  .articles {
+    margin-top: 30px;
+  }
+  .articles-heading {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .articles-list .container {
+    gap: 20px;
+  }
+
+  .article {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .article-title {
+    font-size: 18px;
+  }
+  .footer-items {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .footer-logo {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-location,
+  .footer-email,
+  .footer-phone {
+    justify-content: flex-start;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer-subscribe {
+    width: 100%;
+    max-width: 500px;
+  }
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+  .footer-top-menu {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-columns {
+    width: 100%;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* ========================= 540px ========================= */
+
+@media (max-width: 540px) {
+  .container {
+    --basic-space: 10px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+  .wrapper {
+    margin: 20px 0 0 10px;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-description {
+    margin-bottom: 25px;
+  }
+  .hero-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .products {
+    margin-top: 30px;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sidebar-title,
+  .size-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .sidebar h2 {
+    font-size: 16px;
+  }
+  .sidebar ul {
+    padding-left: 5px;
+  }
+  .products-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .products-tabs {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .products-tabs li {
+    flex: 1;
+    text-align: center;
+  }
+  .products-tabs a {
+    display: block;
+    padding: 8px 5px;
+    font-size: 14px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+  }
+  .sorting {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .sorting select {
+    flex: 1;
+    max-width: 70%;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .pagination {
+    margin-top: 35px;
+    justify-content: center;
+    gap: 8px;
+  }
+  .pagination a {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+  .offers {
+    gap: 30px;
+    padding-top: 20px;
+  }
+  .offer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .offer > img {
+    position: static;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+  .offer-info {
+    align-items: right;
+    text-align: right;
+    margin: 0;
+  }
+  .offer-heading {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .offer-text {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .articles {
+    margin-top: 25px;
+  }
+  .articles-heading {
+    font-size: 22px;
+  }
+  .articles-description {
+    font-size: 13px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+  .articles-list {
+    margin-top: 25px;
+  }
+  .articles-list .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+  }
+
+  .article {
+    flex: none;
+    width: 100%;
+  }
+  .footer-top {
+    gap: 35px;
+  }
+  .footer-benefits {
+    gap: 25px;
+  }
+  .footer-subscribe {
+    max-width: 100%;
+  }
+}
+
+/* ========================= 375px ========================= */
+
+@media (max-width: 375px) {
+  .container {
+    --basic-space: 8px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+  .wrapper {
+    margin-left: 5px;
+    width: 100%;
+  }
+  .hero-heading {
+    font-size: 32px;
+  }
+  .hero-description {
+    margin-bottom: 20px;
+  }
+  .hero-button {
+    padding: 7px 18px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .sidebar h2 {
+    font-size: 15px;
+  }
+  .size-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .sidebar ul {
+    padding-left: 0;
+  }
+  .products-tabs a {
+    font-size: 13px;
+    padding: 6px 3px;
+  }
+  .sorting {
+    font-size: 14px;
+  }
+  .sorting select {
+    font-size: 13px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-actions {
+    bottom: 15px;
+  }
+  .card-actions button {
+    width: 42px;
+    height: 42px;
+  }
+  .pagination {
+    margin-top: 25px;
+  }
+  .offer {
+    padding: 15px;
+  }
+  .offer > img {
+    width: 150px;
+  }
+  .offer-heading {
+    font-size: 15px;
+  }
+  .offer-text {
+    font-size: 13px;
+  }
+  .offer-button {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .articles {
+    margin-top: 10px;
+  }
+  .articles-heading {
+    font-size: 20px;
+  }
+  .articles-list .container {
+    gap: 20px;
+  }
+  .footer-top {
+    gap: 30px;
+  }
+  .footer-benefits {
+    gap: 20px;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .subscribe-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
