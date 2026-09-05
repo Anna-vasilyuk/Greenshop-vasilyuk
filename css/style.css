@@ -51,7 +51,6 @@ img {
 /*--------- CONTAINER START --------- */
 
 .container {
-  max-width: var(--container-width);
   max-width: calc(var(--container-width) + var(--basic-space) * 2);
   padding-left: var(--basic-space);
   padding-right: var(--basic-space);
@@ -91,10 +90,16 @@ img {
 /*--------- HEADER ACTIONS END --------- */
 
 /*--------- NAVIGATION MENU START --------- */
-ul {
-  list-style: none;
+#burger-checkbox,
+.burger {
+  display: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .menu {
   font-family: "Encode Sans Expanded", sans-serif;
   display: flex;
@@ -580,6 +585,7 @@ ul {
   border-radius: 4px;
   font-size: 16px;
   font-weight: 400;
+  transition: 0.3s;
 }
 
 .pagination a:hover {
