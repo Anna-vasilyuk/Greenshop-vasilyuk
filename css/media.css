@@ -1,5 +1,3 @@
-/* ========================= 1024p ========================= */
-
 @media (max-width: 1024px) {
   .container {
     --basic-space: 20px;
@@ -84,9 +82,6 @@
     margin-top: 10px;
   }
 }
-
-/* ========================= 768px ========================= */
-
 @media (max-width: 768px) {
   .container {
     --basic-space: 15px;
@@ -243,13 +238,126 @@
     text-align: center;
     width: 100%;
   }
+
+  .burger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 3;
+    order: 1;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    margin: 0 10px;
+  }
+  #burger-checkbox {
+    display: block;
+  }
+  .burger span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    left: 7px;
+    background-color: #3d3d3d;
+    transition: all 0.3s ease;
+  }
+  #burger-checkbox:checked + .burger {
+    background-color: #dce8e090;
+  }
+  .burger span:first-child {
+    top: 15px;
+  }
+
+  .burger span:nth-child(2) {
+    top: 23px;
+  }
+
+  .burger span:nth-child(3) {
+    top: 31px;
+  }
+
+  .burger span:last-child {
+    display: none;
+  }
+
+  #burger-checkbox:checked + .burger span:first-child {
+    top: 23px;
+    transform: rotate(45deg);
+  }
+  #burger-checkbox:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  #burger-checkbox:checked + .burger span:nth-child(3) {
+    top: 23px;
+    transform: rotate(-45deg);
+  }
+  #burger-checkbox {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 15;
+  }
+  .nav .menu {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: min(40%, 180px);
+    padding: 0;
+    flex-direction: column;
+    gap: 3px;
+
+    background-color: var(--submenu-background-color);
+    z-index: 5;
+  }
+  #burger-checkbox:checked ~ .nav .menu {
+    display: flex;
+  }
+  .menu > .menu-item:nth-child(3) > .sub-menu {
+    display: none;
+    position: absolute;
+    top: -80px;
+    right: 100%;
+    width: 220px;
+    padding-right: 5px;
+    z-index: 6;
+  }
+  .menu-link {
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  .menu-link:hover {
+    background-color: var(--submenu-hover-color);
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  .menu > .menu-item:nth-child(3):hover > .sub-menu {
+    display: block;
+  }
+  .sub-menu .menu-item > .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    right: 0;
+    width: 200px;
+    padding: 0;
+    z-index: 7;
+  }
+  .sub-menu .menu-item:hover > .sub-menu {
+    display: block;
+  }
 }
-
-/* ========================= 540px ========================= */
-
 @media (max-width: 540px) {
   .container {
     --basic-space: 10px;
+    position: relative;
   }
 
   .menu {
@@ -257,7 +365,7 @@
   }
 
   .header-actions {
-    gap: 10px;
+    gap: 20px;
   }
   .hero-heading {
     font-size: 40px;
@@ -363,7 +471,7 @@
     margin-bottom: 15px;
   }
   .offer-info {
-    align-items: right;
+    align-items: flex-end;
     text-align: right;
     margin: 0;
   }
@@ -408,10 +516,30 @@
   .footer-subscribe {
     max-width: 100%;
   }
+  .nav .menu {
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: min(40%, 160px);
+    padding: 0;
+    flex-direction: column;
+    gap: 3px;
+
+    background-color: var(--submenu-background-color);
+    z-index: 5;
+  }
+
+  .sub-menu .menu-item > .sub-menu {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 215px;
+    width: 200px;
+    padding: 0;
+    z-index: 7;
+  }
 }
-
-/* ========================= 375px ========================= */
-
 @media (max-width: 375px) {
   .container {
     --basic-space: 8px;
@@ -511,5 +639,21 @@
     width: 100%;
     padding: 12px;
     font-size: 14px;
+  }
+  .nav .menu {
+    top: 70px;
+    right: 8px;
+    width: 160px;
+  }
+  .menu > .menu-item:nth-child(3) > .sub-menu {
+    width: 180px;
+    right: 100%;
+    top: -60px;
+  }
+  .sub-menu .menu-item > .sub-menu {
+    top: 100%;
+    right: 0;
+    left: auto;
+    width: 140px;
   }
 }
